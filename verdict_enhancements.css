@@ -1,0 +1,413 @@
+/* Enhanced Verdict Modal Styles */
+
+.verdict-modal {
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Verdict Search Enhancements */
+.verdict-search-input:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2), 
+                0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+/* Category Button Animations */
+.category-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.category-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s;
+}
+
+.category-btn:hover::before {
+    left: 100%;
+}
+
+/* Offense Card Enhancements */
+.offense-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.offense-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.offense-card:hover::before {
+    opacity: 1;
+}
+
+.offense-card.selected {
+    animation: pulseSelection 0.3s ease-out;
+}
+
+@keyframes pulseSelection {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Selected Items Animations */
+.selected-item {
+    animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Quantity Controls */
+.quantity-btn {
+    transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quantity-btn:active {
+    transform: scale(0.95);
+}
+
+/* Remove Button */
+.remove-item {
+    transition: all 0.2s ease;
+}
+
+.remove-item:hover {
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+}
+
+/* Total Amount Animation */
+.total-amount .amount {
+    transition: all 0.3s ease;
+}
+
+.total-amount .amount.updated {
+    animation: amountUpdate 0.5s ease-out;
+}
+
+@keyframes amountUpdate {
+    0% { transform: scale(1); color: #22c55e; }
+    50% { transform: scale(1.2); color: #16a34a; }
+    100% { transform: scale(1); color: #22c55e; }
+}
+
+/* Form Enhancements */
+.form-input:focus, .form-textarea:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1),
+                0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Enhancements */
+.btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Action Buttons */
+.action-btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.action-btn:hover::after {
+    opacity: 1;
+}
+
+.action-btn-verdict:hover {
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+}
+
+.action-btn-fine:hover {
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+}
+
+.action-btn-arrest:hover {
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
+}
+
+.action-btn-note:hover {
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.3);
+}
+
+/* Loading States */
+.loading-offenses {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Success Message Animation */
+.success-message {
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+}
+
+.success-message.show {
+    animation: successSlideIn 0.4s ease-out;
+}
+
+@keyframes successSlideIn {
+    from {
+        transform: translateX(400px) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Scrollbar Styling */
+.verdict-offenses-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.verdict-offenses-grid::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+.verdict-offenses-grid::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+
+.verdict-offenses-grid::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+.verdict-modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.verdict-modal-body::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+.verdict-modal-body::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+
+.verdict-modal-body::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Dark Theme Enhancements */
+.verdict-modal-header {
+    background: linear-gradient(135deg, #334155, #475569, #1e293b);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.verdict-selected-section,
+.verdict-details-section {
+    border: 1px solid rgba(51, 65, 85, 0.8);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 1024px) {
+    .verdict-modal {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .verdict-offenses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .verdict-modal {
+        width: 98%;
+        margin: 10px;
+        max-height: 95vh;
+    }
+    
+    .verdict-modal-header {
+        padding: 20px;
+    }
+    
+    .verdict-modal-body {
+        padding: 20px;
+    }
+    
+    .verdict-offenses-grid {
+        grid-template-columns: 1fr;
+        max-height: 200px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .verdict-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
+    
+    .selected-item {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .selected-item-controls {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .verdict-modal {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .verdict-modal-header {
+        padding: 16px;
+    }
+    
+    .verdict-modal-body {
+        padding: 16px;
+    }
+    
+    .verdict-modal-footer {
+        padding: 16px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .offense-card {
+        border-width: 2px;
+    }
+    
+    .category-btn.active {
+        border-width: 2px;
+        border-color: #ffffff;
+    }
+    
+    .selected-item {
+        border-width: 2px;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .modal-overlay {
+        position: static;
+        background: white;
+        color: black;
+    }
+    
+    .verdict-modal {
+        box-shadow: none;
+        border: 2px solid black;
+    }
+    
+    .modal-close,
+    .verdict-modal-footer {
+        display: none;
+    }
+}

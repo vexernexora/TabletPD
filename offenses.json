@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "nazwa": "Przekroczenie prędkości o 10-20 km/h",
+    "kwota": 200,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Przekroczenie dozwolonej prędkości w terenie zabudowanym"
+  },
+  {
+    "id": 2,
+    "nazwa": "Sranie na Ulicy",
+    "kwota": 2137,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Przekroczenie dozwolonej prędkości w terenie zabudowanym"
+  },
+  {
+    "id": 3,
+    "nazwa": "Oglądanie PornHub",
+    "kwota": 1000000000,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Przekroczenie dozwolonej prędkości w terenie zabudowanym"
+  },
+  {
+    "id": 4,
+    "nazwa": "Parkowanie w miejscu zabronionym",
+    "kwota": 150,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Nieprawidłowe parkowanie pojazdu"
+  },
+  {
+    "id": 5,
+    "nazwa": "Przejazd na czerwonym świetle",
+    "kwota": 500,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Naruszenie sygnalizacji świetlnej"
+  },
+  {
+    "id": 6,
+    "nazwa": "Jazda bez ważnego prawa jazdy",
+    "kwota": 1500,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Prowadzenie pojazdu bez uprawnień"
+  },
+  {
+    "id": 7,
+    "nazwa": "Zakłócanie porządku publicznego",
+    "kwota": 300,
+    "wyrok": 0,
+    "kategoria": "Porządkowe",
+    "opis": "Naruszenie spokoju i porządku publicznego"
+  },
+  {
+    "id": 8,
+    "nazwa": "Spożywanie alkoholu w miejscu publicznym",
+    "kwota": 250,
+    "wyrok": 0,
+    "kategoria": "Porządkowe",
+    "opis": "Spożywanie napojów alkoholowych w miejscach zabronionych"
+  },
+  {
+    "id": 9,
+    "nazwa": "Zanieczyszczanie przestrzeni publicznej",
+    "kwota": 200,
+    "wyrok": 0,
+    "kategoria": "Porządkowe",
+    "opis": "Wyrzucanie śmieci w miejscach niedozwolonych"
+  },
+  {
+    "id": 10,
+    "nazwa": "Wandalizm mienia publicznego",
+    "kwota": 1000,
+    "wyrok": 0,
+    "kategoria": "Porządkowe",
+    "opis": "Zniszczenie lub uszkodzenie mienia publicznego"
+  },
+  {
+    "id": 11,
+    "nazwa": "Prowadzenie działalności bez zezwolenia",
+    "kwota": 2000,
+    "wyrok": 0,
+    "kategoria": "Gospodarcze",
+    "opis": "Prowadzenie działalności gospodarczej bez wymaganych pozwoleń"
+  },
+  {
+    "id": 12,
+    "nazwa": "Naruszenie przepisów sanitarnych",
+    "kwota": 500,
+    "wyrok": 0,
+    "kategoria": "Sanitarne",
+    "opis": "Nieprzestrzeganie przepisów sanitarno-epidemiologicznych"
+  },
+  {
+    "id": 13,
+    "nazwa": "Jazda pod wpływem alkoholu (0.2-0.5‰)",
+    "kwota": 2500,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Prowadzenie pojazdu w stanie po użyciu alkoholu"
+  },
+  {
+    "id": 14,
+    "nazwa": "Nieprawidłowe użycie sygnałów dźwiękowych",
+    "kwota": 100,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Niepotrzebne używanie klaksonu w terenie zabudowanym"
+  },
+  {
+    "id": 15,
+    "nazwa": "Niezastosowanie się do sygnałów policjanta",
+    "kwota": 300,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Odmowa wykonania poleceń funkcjonariusza ruchu drogowego"
+  },
+  {
+    "id": 16,
+    "nazwa": "Nieustąpienie pierwszeństwa pieszemu",
+    "kwota": 350,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Nieudzielenie pierwszeństwa przejścia pieszemu na przejściu"
+  },
+  {
+    "id": 17,
+    "nazwa": "Niewłaściwe wyprzedzanie",
+    "kwota": 500,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Wyprzedzanie w miejscu zabronionym lub niebezpieczne"
+  },
+  {
+    "id": 18,
+    "nazwa": "Naruszenie ciszy nocnej",
+    "kwota": 250,
+    "wyrok": 0,
+    "kategoria": "Porządkowe",
+    "opis": "Hałasowanie w godzinach 22:00-06:00"
+  },
+  {
+    "id": 19,
+    "nazwa": "Niestawienie się na wezwanie władzy",
+    "kwota": 200,
+    "wyrok": 0,
+    "kategoria": "Administracyjne",
+    "opis": "Niezgłoszenie się w wyznaczonym terminie do organu wzywającego"
+  },
+  {
+    "id": 20,
+    "nazwa": "Brak kasku ochronnego na motorze",
+    "kwota": 100,
+    "wyrok": 0,
+    "kategoria": "Drogowe",
+    "opis": "Jazda motocyklem bez używania kasku ochronnego"
+  }
+]
